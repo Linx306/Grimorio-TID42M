@@ -1,0 +1,16 @@
+.header-antiguo{
+    background-color: #f8c771;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.header-antiguo h1{
+font-family: 'Goudy Bookletter 1911', sans-serif;
+font-size: 36px;
+margin-bottom: 10px;
+}
+.header-antiguo p{
+    font-family: 'Book Antiqua', sans-serif; 
+    font-size: 18px;
+    color: #5c5c5c; 
+  }

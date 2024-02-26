@@ -1,0 +1,10 @@
+
+.hechizo-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .hechizo-container img {
+    width: 80px;
+    margin-bottom: 10px;
+  }
