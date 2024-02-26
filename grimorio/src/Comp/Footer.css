@@ -1,35 +1,30 @@
-
 .footer-container {
-  background-color: #f8f1e5;
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
-  position: fixed; 
-  bottom: 0; 
-  width: 100%; 
-}
-
-.footer {
-  flex: 1;
-  margin-right: 20px;
-}
-
-.footer h2 {
-  font-family: 'Goudy Bookletter 1911', sans-serif;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.footer p {
-  font-family: 'Book Antiqua', sans-serif;
-  font-size: 14px;
-  color: #5c5c5c;
-  margin-bottom: 5px;
-}
-
-.footer img {
-  width: 80px;
-  align-items: end;
-}
+    background-color: #f8f1e5;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .footer {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .footer h2 {
+    font-family: 'Goudy Bookletter 1911', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer p {
+    font-family: 'Book Antiqua', sans-serif;
+    font-size: 14px;
+    color: #5c5c5c;
+    margin-bottom: 5px;
+  }
+  
+  .footer img {
+    width: 80px; 
+  }
