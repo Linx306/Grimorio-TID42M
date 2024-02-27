@@ -9,9 +9,7 @@ function App() {
       <Header />
       <Pagina />
       <Footer />
-      </div>
-
-           
+      </div>    
   );
 }
 export default App;

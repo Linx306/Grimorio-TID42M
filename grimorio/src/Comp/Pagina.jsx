@@ -7,7 +7,7 @@ function Pagina() {
   return (
     <div className="pagina-container">
       <div className="contenido-izquierdo">
-      <HechizosList />
+      <HechizosList/>
         
       </div>
       <div className="contenido-derecho">
