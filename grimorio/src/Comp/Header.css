@@ -1,5 +1,6 @@
 .header-antiguo{
     background-color: #f8c771;
+    background-image: url("fondoH.jpg");
     padding: 20px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -12,5 +13,5 @@ margin-bottom: 10px;
 .header-antiguo p{
     font-family: 'Book Antiqua', sans-serif; 
     font-size: 18px;
-    color: #5c5c5c; 
+    color: #ffffff; 
   }

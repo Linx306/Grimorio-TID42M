@@ -1,24 +1,25 @@
-
 .pagina-container {
-    background-color: #e3d3bf;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    font-family: 'Book Antiqua', sans-serif;
-    font-size: 18px;
-  }
-  
-  .contenido-izquierdo,
-  .contenido-derecho {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .contenido-izquierdo {
-    background-color: #d9c5b4; 
-  }
-  
-  .contenido-derecho {
-    background-color: #c9b7a2; 
-  }
+  background-color: #c9b7a2;
+  display: flex;
+  width: 100%;
+  height: 1200px;;
+  font-family: 'Book Antiqua', sans-serif;
+  font-size: 18px;
+}
+
+.contenido-izquierdo,
+.contenido-derecho {
+  background-image: url("Pagina.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contenido-izquierdo {
+  text-align:center;
+}
+.contenido-derecho {
+  text-align: center;
+}

@@ -1,4 +1,3 @@
-import React from 'react';
 import './Footer.css'; 
 import SymbolImage from './Simbolo.png'; 
 
@@ -17,7 +16,6 @@ function Footer() {
       </div>
 
       <div className="footer">
-        
         <img src={SymbolImage} alt="Símbolo Mágico" />
       </div>
     </div>

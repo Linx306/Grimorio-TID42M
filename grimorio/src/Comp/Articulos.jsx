@@ -1,10 +1,9 @@
-import React from 'react';
-
+import './Articulos.css';
 function Articulos({ nombre, descripcion }) {
   return (
-    <div>
-      <h3>{nombre}</h3>
-      <p>{descripcion}</p>
+    <div className='Arti'>
+      <h3>nombre</h3>
+      <p>descripcion</p>
     </div>
   );
 }
