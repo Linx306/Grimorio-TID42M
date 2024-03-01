@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Hechizos.css';
+import './CSS/Hechizos.css';
 
 function Hechizo({ nombre, descripcion, dnd_class }) {
   return (

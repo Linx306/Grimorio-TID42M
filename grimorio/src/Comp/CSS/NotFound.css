@@ -1,7 +1,7 @@
 .NotFound {
     font-family: 'Book Antiqua', sans-serif;
     font-size: 18px;
-    background-image: url("fondoH.jpg");
+    background-image: url("../IMG/fondoH.jpg");
     background-size: cover;
     background-position: center; /* Para centrar la imagen */
     background-repeat: no-repeat;

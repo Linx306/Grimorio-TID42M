@@ -1,7 +1,7 @@
 import React from 'react';
 import Articulos from './Articulos.jsx';
 import HechizosList from './Hechizos.jsx';
-import './Pagina.css'; 
+import './CSS/Pagina.css'; 
 
 function Pagina() {
   return (

@@ -1,5 +1,5 @@
-import './NotFound.css';
-import SymbolImage from './Maguito2.png'; 
+import './CSS/NotFound.css';
+import SymbolImage from './IMG/Maguito2.png'; 
 import { Link } from 'react-router-dom';
 function NotFound() {
   return (
@@ -8,7 +8,7 @@ function NotFound() {
       <div>
         <p>Vuelve por donde viniste, no juegues con lo que no comprendes</p>
         <Link to="/">
-          <img src={SymbolImage} alt="Símbolo Mágico" />
+          <img src={SymbolImage} alt="Maguito" />
         </Link>
       </div>
     </div>

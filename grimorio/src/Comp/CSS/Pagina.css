@@ -9,7 +9,7 @@
 
 .contenido-izquierdo,
 .contenido-derecho {
-  background-image: url("Pagina.jpg");
+  background-image: url("../IMG/Pagina.jpg");
   background-repeat: no-repeat; 
   background-size: cover; 
   flex: 1;

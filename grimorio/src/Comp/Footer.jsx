@@ -1,5 +1,5 @@
-import './Footer.css'; 
-import SymbolImage from './Simbolo.png'; 
+import './CSS/Footer.css'; 
+import SymbolImage from './IMG/Simbolo.png'; 
 
 function Footer() {
   return (

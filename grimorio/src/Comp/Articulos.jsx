@@ -1,4 +1,4 @@
-import './Articulos.css';
+import './CSS/Articulos.css';
 function Articulos({ nombre, descripcion }) {
   return (
     <div className='Arti'>
