@@ -1,7 +1,7 @@
 import React from 'react';
-import Articulos from './Articulos.jsx';
 import HechizosList from './Hechizos.jsx';
 import './CSS/Pagina.css'; 
+import ArticulosList from './Articulos.jsx';
 
 function Pagina() {
   return (
@@ -11,7 +11,7 @@ function Pagina() {
         
       </div>
       <div className="contenido-derecho">
-        <Articulos />
+        <ArticulosList />
       </div>
     </div>
   );

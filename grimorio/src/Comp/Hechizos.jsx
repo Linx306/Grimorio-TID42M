@@ -11,7 +11,6 @@ function Hechizo({ nombre, descripcion, dnd_class }) {
   );
 }
 
-
 function HechizosList() {
   const [hechizos, setHechizos] = useState([]);
 
