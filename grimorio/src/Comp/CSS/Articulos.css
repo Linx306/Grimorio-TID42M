@@ -1,3 +1,19 @@
 .Arti{
     margin-top: 10%;
 }
+.hidden {
+    opacity: 0;
+  }
+  
+  .fade-out {
+    animation: fadeOut 3s;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

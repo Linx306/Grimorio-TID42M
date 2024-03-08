@@ -1,25 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import './CSS/Hechizos.css';
 
-function Hechizo({ nombre, descripcion, dnd_class }) {
-  return (
-    <div className="hechizo">
-      <h3>{nombre}</h3>
-      <p>{descripcion}</p>
-      <p>{Array.isArray(dnd_class) ? `Solo lo pueden usar estas clases: ${dnd_class.join(', ')}` : 'Clases no especificadas'}</p>
-    </div>
-  );
-}
-
 function HechizosList() {
   const [hechizos, setHechizos] = useState([]);
+  const [visibleHechizos, setVisibleHechizos] = useState([]);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch('https://api.open5e.com/v1/spells/');
         const data = await response.json();
-        setHechizos(data.results.slice(0, 3));
+        setHechizos(data.results);
+        setVisibleHechizos(data.results.slice(0, 3));
       } catch (error) {
         console.error('Error al obtener datos de la API:', error);
       }
@@ -28,17 +21,25 @@ function HechizosList() {
     fetchData();
   }, []);
 
+  const handleClick = () => {
+    setIsAnimating(true);
+    const index = Math.floor(Math.random() * (hechizos.length - 3));
+    setTimeout(() => {
+      setVisibleHechizos(hechizos.slice(index, index + 3));
+      setIsAnimating(false);
+    }, 3000);
+  };
+
   return (
     <div>
-      {hechizos.map((hechizo) => (
-  <Hechizo
-    key={hechizo.slug}
-    nombre={hechizo.name}
-    descripcion={hechizo.desc}
-    dnd_class={hechizo.spell_lists || []} 
-  />
-))}
-
+      {visibleHechizos.map((hechizo) => (
+        <div key={hechizo.slug} className={`hechizo ${isAnimating && 'fade-out'}`}>
+          <h3>{hechizo.name}</h3>
+          <p>{hechizo.desc}</p>
+          <p>{Array.isArray(hechizo.spell_lists) ? `Solo lo pueden usar estas clases: ${hechizo.spell_lists.join(', ')}` : 'Clases no especificadas'}</p>
+        </div>
+      ))}
+      <button onClick={handleClick}>Cambiar hechizos</button>
     </div>
   );
 }
