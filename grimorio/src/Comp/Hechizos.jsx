@@ -9,8 +9,8 @@ function HechizosList() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = fetch('https://api.open5e.com/v1/spells/');
-        const data = response.json();
+        const response = await fetch('https://api.open5e.com/v1/spells/');
+        const data = await response.json();
         setHechizos(data.results);
         setVisibleHechizos(data.results.slice(0, 3));
       } catch (error) {
