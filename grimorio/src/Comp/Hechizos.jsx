@@ -17,7 +17,6 @@ function HechizosList() {
         console.error('Error al obtener datos de la API:', error);
       }
     };
-
     fetchData();
   }, []);
 
