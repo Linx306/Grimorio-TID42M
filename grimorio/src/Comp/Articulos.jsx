@@ -9,8 +9,8 @@ function ArticulosList() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://api.open5e.com/v1/magicitems/');
-        const data = await response.json();
+        const response =  fetch('https://api.open5e.com/v1/magicitems/');
+        const data = response.json();
         setArticulos(data.results);
         setVisibleArticulos(data.results.slice(0, 3));
       } catch (error) {
